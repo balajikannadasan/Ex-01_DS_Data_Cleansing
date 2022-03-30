@@ -22,7 +22,7 @@ Save the Clean data to the file
 # CODE
 ~~~
 #PROGRAM DEVELOPED BY : K.BALAJI
-REGISTER NUMBER : 212221230011
+#REGISTER NUMBER : 212221230011
 
 
 
@@ -34,7 +34,6 @@ df.info()
 df.isnull().sum()
 df['show_name']=df['show_name'].fillna(df['show_name'].mode()[0])
 df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
-df['lifetime_popularity_rank']=df['lifetime_popularity_rank'].fillna(df['lifetime_popularity_rank'].mode()[0])
 df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mode()[0])
 df['rating']=df['rating'].fillna(df['rating'].mean())
 df['watchers']=df['watchers'].fillna(df['watchers'].median())
